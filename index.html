@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>My weather application</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2
+?family=DM+Sans:wght@400;500
+&family=Barlow+Condensed:wght@700
+&family=League+Spartan:wght@700
+&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="src/styles.css" />
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   </head>
+
+   <body>
+      <div class="container glass">
+         <header class="logo">
+            <a href="https://www.shecodes.io/" target="_blank" rel="noopener">
+               <img
+                  src="images/logo-shecodes.png"
+                  alt="She Codes logo"
+                  width="150"
+               />
+            </a>
+         </header>
+
+         <section>
+            <form class="search-form" id="city-input" action="#" method="get">
+               <input
+                  id="search-input"
+                  type="search"
+                  name="city"
+                  placeholder="Enter a city.."
+                  autocomplete="off"
+                  aria-label="Search city"
+               />
+               <input id="search-button" type="submit" value="Search" />
+            </form>
+            <br />
+         </section>
+
+         <main>
+            <div class="weather-app-data">
+               <div>
+                  <h1 class="weather-app-city" id="weather-app-city"></h1>
+                  <p class="weather-app-details">
+                     <span id="time"></span>
+                     <span id="description">, </span>
+                     <br />
+                     Humidity: <strong id="humidity"></strong>, Wind:
+                     <strong id="speed"></strong>
+                  </p>
+               </div>
+
+               <div class="weather-app-temp-container">
+                  <div class="weather-app-icon" id="weather-app-icon"></div>
+                  <div
+                     class="weather-app-temp-value"
+                     id="weather-app-temp-value"
+                  ></div>
+                  <div class="weather-app-temp-unit">°C</div>
+               </div>
+            </div>
+         </main>
+
+         <footer>
+            <p class="credits">
+               Coded by
+               <a
+                  href="https://github.com/di-legorreta"
+                  target="_blank"
+                  rel="noopener"
+                  >Diana Legorreta</a
+               >
+               open-sourced on
+               <a
+                  href="https://github.com/di-legorreta/week7-weather-app-hw"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+               >
+               and hosted on
+               <a
+                  href="https://week7-weather-app-hw.pages.dev/"
+                  target="_blank"
+                  rel="noopener"
+                  >Cloudflare Pages</a
+               >.
+            </p>
+         </footer>
+      </div>
+
+      <script src="src/index.js"></script>
+   </body>
+</html>
