@@ -2,16 +2,21 @@ body {
    background: url(../images/sunset.jpg) center / cover no-repeat fixed;
    background-repeat: no-repeat;
    background-attachment: fixed;
+   font-family: "Barlow", "DM Sans", sans-serif;
 }
 
 h1 {
    font-family: "Barlow Condensed", "DM Sans", sans-serif;
    font-size: 60px;
-   font-weight: 700;
+   font-weight: 900;
    letter-spacing: 2px;
    margin: 0;
+   color: #523c4e;
 }
 
+a {
+   color: #523c4e;
+}
 .container {
    background-color: transparent;
    max-width: 700px;
@@ -76,7 +81,7 @@ h1 {
    align-items: center;
    gap: 24px;
    padding-bottom: 30px;
-   border-bottom: 1px solid #75586f;
+   color: #523c4e;
 }
 
 .weather-app-data > div:first-child {
@@ -87,6 +92,11 @@ h1 {
 .weather-app-details {
    margin: 6px 0 0;
    line-height: 1.35;
+}
+
+.weather-app-details strong {
+   font-family: "Barlow Condensed", "DM Sans", sans-serif;
+   color: #523c4e;
 }
 
 .weather-app-temp-container {
@@ -131,4 +141,37 @@ h1 {
    text-align: center;
    padding: 20px;
    color: white;
+}
+
+.weather-forcast {
+   display: flex;
+   justify-content: space-around;
+   border-bottom: 1px solid #75586f;
+   padding-bottom: 30px;
+}
+
+.weather-forcast-date {
+   text-align: center;
+   color: #75586f;
+   font-size: 18px;
+   line-height: 20px;
+   margin-bottom: 10px;
+}
+
+.weather-forcast-icon {
+   font-size: 30px;
+   text-align: center;
+}
+
+.weather-forcast-temps {
+   font-size: 16px;
+   text-align: center;
+   color: #523c4e;
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.weather-forcast-temper {
+   padding: 0 10px;
 }
