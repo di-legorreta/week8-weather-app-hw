@@ -20,7 +20,7 @@ a {
 .container {
    background-color: transparent;
    max-width: 700px;
-   margin: 100px auto;
+   margin: 70px auto;
    padding: 40px;
    border-radius: 20px;
    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
